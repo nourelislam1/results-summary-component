@@ -1,0 +1,187 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+p {
+  font-size: 18px;
+}
+.conainer {
+  width: 50%;
+  height: 50vh;
+  margin: 25vh;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  box-shadow: 15px 15px 50px  rgb(134, 134, 248);
+}
+.result {
+  border-radius: 20px;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+  width: 50%;
+  text-align: center;
+}
+.result h2 {
+  color:  hsl(241, 100%, 89%);
+  padding: 20px;
+}
+.result .box {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width:180px;
+  height:180px;
+  border-radius: 50%;
+  background-color:hsl(241, 90%, 59%);
+}
+.result .box span {
+  position: absolute;
+  top: 50%;
+  left: 26%;
+  transform: translateY(-70%);
+  color: white;
+  font-size:75px;
+  font-weight: 900;
+}
+.box p {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: hsl(241, 100%, 89%);
+}
+.result .text span {
+  color: white;
+  font-weight: 900;
+  font-size: 30px;
+}
+.result .text {
+  margin: 20px 40px;
+}
+.result .text p {
+  color: hsl(241, 100%, 89%);
+}
+.summary {
+  padding: 10px 5%;
+  width: 50%;
+}
+.summary .boxs {
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+.space {
+  display: flex;
+  gap: 20px;
+}
+.summary .boxs p {
+  margin: 0;
+  color: hsl(241, 100%, 89%);
+}
+.summary .boxs p span {
+  color: black;
+  font-weight: 700;
+}
+.a1 {
+  color: hsl(0, 100%, 67%);
+}
+.boxs.b1 {
+  background-color: hsla(0, 100%, 67%, 0.1);
+}
+.a2 {
+  color: hsl(39, 100%, 56%);
+}
+.boxs.b2 {
+  background-color: hsla(39, 100%, 56%,0.1);
+}
+.a3 {
+  color: hsl(166, 100%, 37%);
+}
+.boxs.b3 {
+  background-color: hsla(166, 100%, 37%,0.1);
+}
+.a4 {
+  color: hsl(234, 85%, 45%);
+}
+.boxs.b4 {
+  background-color: hsla(234, 85%, 45%,0.1);
+}
+.continue {
+  text-align: center;
+  padding: 20px;
+  border-radius: 30px;
+  background:hsl(224, 30%, 27%);
+  margin-top: 40px;
+}
+.continue:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+.continue span {
+  color: white;
+  font-weight: 600;
+}
+@media (max-width: 1200px) {
+  .conainer {
+    flex-direction: column;
+    width: 35%;
+    height: 90vh;
+    margin: 5vh;
+  }
+  .result {
+    width: 100%;
+  }
+  .summary {
+    width: 100%;
+  }
+  .summary .boxs {
+    margin: 12px 0;
+    padding: 12px;
+  }
+  .continue {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .conainer {
+    width: 60%;
+  }
+}
+@media (max-width: 650px) {
+  .conainer {
+    width: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .conainer {
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .conainer {
+    width: 100%;
+    box-shadow: none;
+    margin: 0;
+  }
+  .result {
+    border-radius: 0px 0px 20px 20px;
+  }
+  .summary .boxs {
+    margin: 20px 0;
+    padding: 20px;
+  }
+  .continue {
+    margin-top: 40px;
+  }
+}
